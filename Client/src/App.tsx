@@ -8,7 +8,7 @@ import "./App.css";
 import OpenAI from "openai";
 
 //Enter your OpenAI key here
-const openaiApiKey = "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";
+const openaiApiKey = process.env.OPENAI_API_KEY; // Read the API key from environment variables
 
 // Set up OpenAI w/ API Key
 const openai = new OpenAI({
